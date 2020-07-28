@@ -133,8 +133,7 @@ public class SodNotZodVI
 		
 		if (grandTotal > 0.0)
 		{
-			displayFinalReport(userName, memberCount, seniorCount,
-noDiscountCount, premiumCount, specialCount, basicCount, grandTotal);
+			displayFinalReport(userName, memberCount, seniorCount, noDiscountCount, premiumCount, specialCount, basicCount, grandTotal);
 		}
 		
 		displayFarewellMessage();
@@ -196,7 +195,7 @@ noDiscountCount, premiumCount, specialCount, basicCount, grandTotal);
 	
 	//Display Receipt
 	public static void displayItemReceipt(String borrowedItemName, double borrowedItemPrice, String borrowedDiscountName, 
-double borrowedDiscountPrice, int borrowedHowMany,double borrowedPurchaseAmt, double borrowedSubTotal)
+	double borrowedDiscountPrice, int borrowedHowMany,double borrowedPurchaseAmt, double borrowedSubTotal)
 	{
 		System.out.println("");
 		System.out.println("....................................");
@@ -228,7 +227,7 @@ double borrowedDiscountPrice, int borrowedHowMany,double borrowedPurchaseAmt, do
 	
 	//Display Final Report
 	public static void displayFinalReport(String borrowedUserName, int borrowedMemberCount, int borrowedSeniorCount,
-int borrowedNoDiscountCount, int borrowedPremiumCount, int borrowedSpecialCount, int borrowedBasicCount, double borrowedGrandTotal)
+	int borrowedNoDiscountCount, int borrowedPremiumCount, int borrowedSpecialCount, int borrowedBasicCount, double borrowedGrandTotal)
 	{
 		System.out.println("");
 		System.out.println(borrowedUserName + ", here are the final numbers for the day:");
@@ -285,8 +284,7 @@ int borrowedNoDiscountCount, int borrowedPremiumCount, int borrowedSpecialCount,
 		displayItemMenu();
 		localItemSelection = borrowedInput.next().toUpperCase().charAt(0);
 			
-		while (localItemSelection != 'A' && localItemSelection != 'B' && localItemSelection != 'C'
-&& localItemSelection != 'R')
+		while (localItemSelection != 'A' && localItemSelection != 'B' && localItemSelection != 'C' && localItemSelection != 'R')
 		{
 			System.out.println("");
 			System.out.println("!!!!INVALID SELECTION!!!!");
